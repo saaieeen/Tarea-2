@@ -1,7 +1,7 @@
 # Proyecto de Ingeniería de Software
 
 \\LinkPruebas de endpoints realizadas en Postman\\
-[text](https://sayen-barra2301-6694820.postman.co/workspace/saien's-Workspace~19449793-4e00-4b29-8b7d-7ead1dc06a7c/request/47294072-eabf61b3-8b76-4fe2-b6e1-b5913c60cf28?action=share&creator=47294072)
+[Link postman](https://sayen-barra2301-6694820.postman.co/workspace/saien's-Workspace~19449793-4e00-4b29-8b7d-7ead1dc06a7c/request/47294072-eabf61b3-8b76-4fe2-b6e1-b5913c60cf28?action=share&creator=47294072)
 
 ## Descripción
 API REST desarrollada como material educativo para las clases de Ingeniería de Software. Este proyecto implementa un sistema de autenticación y gestión de usuarios utilizando Node.js, Express.js y PostgreSQL.
