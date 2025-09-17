@@ -18,7 +18,7 @@ export async function getPrivateProfile(req, res) {
   });
 }
 
-// 🔹 Actualizar perfil
+// Actualizar el perfil
 export async function updatePrivateProfile(req, res) {
   try {
     const userRepo = AppDataSource.getRepository(User);
@@ -40,7 +40,7 @@ export async function updatePrivateProfile(req, res) {
   }
 }
 
-// 🔹 Eliminar perfil
+// Eliminar el perfil
 export async function deletePrivateProfile(req, res) {
   try {
     const userRepo = AppDataSource.getRepository(User);
