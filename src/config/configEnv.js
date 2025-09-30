@@ -10,4 +10,4 @@ export const DB_USERNAME = process.env.DB_USERNAME;
 export const PASSWORD = process.env.PASSWORD;
 export const DATABASE = process.env.DATABASE;
 export const JWT_SECRET = process.env.JWT_SECRET;
-export const cookieKey = process.env.COOKIE_KEY;
+export const COOKIE_KEY = process.env.COOKIE_KEY;
