@@ -20,9 +20,8 @@ connectDB()
 
     // Levanta el servidor Express
     const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => {
-      console.log(`Servidor iniciado en http://localhost:${PORT}`);
-    });
+    app.listen(PORT, '0.0.0.0', () => console.log(`Servidor iniciado en http://0.0.0.0:${PORT}`));
+
   })
   .catch((error) => {
     console.log("Error al conectar con la base de datos:", error);

@@ -6,19 +6,17 @@ import { registerValidation, loginValidation } from "../validation/usuario.valid
 
 
 export async function login(req, res) {
-  try {
-    const { error, value } = loginValidation.validate(req.body, { abortEarly: false });
-    if (error) {
-      const messages = error.details.map(d => d.message).join(", ");
-      return handleErrorClient(res, 400, messages);
-    }
-
-    const data = await loginUser(value.email, value.password);
-    handleSuccess(res, 200, "Login exitoso", data);
-  } catch (error) {
-    handleErrorClient(res, 401, error.message);
+  
+  const { error, value } = loginValidation.validate(req.body, { abortEarly: false });
+  if (error) {
+    const messages = error.details.map(d => d.message).join(", ");
+    return handleErrorClient(res, 400, messages);
   }
+
+  const data = await loginUser(value.email, value.password);
+  handleSuccess(res, 200, "Login exitoso", data);
 }
+
 
 export async function register(req, res) {
   try {
