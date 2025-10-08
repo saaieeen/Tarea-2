@@ -8,6 +8,7 @@ import {
 } from "../services/notas.services.js";
 import { handleSuccess, handleErrorClient, handleErrorServer } from "../Handlers/responseHandlers.js";
 
+
 export class NotasController {
   // Obtener todas las notas
   async getAllNotas(req, res) {
